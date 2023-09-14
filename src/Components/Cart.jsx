@@ -1,28 +1,37 @@
 import PropTypes from "prop-types"; // ES6
-const Cart = ({ infoCart }) => {
-
+const Cart = ({ infoCart, credit, price, remainingCredit }) => {
   return (
     <div className=" bg-white rounded-lg py-6 mx-4">
       <h1 className="text-[#2F80ED] font-bold text-xl">
-        Credit Hour Remaining 7 hours
+        Credit Hour Remaining {remainingCredit} hours
       </h1>
       <hr className="my-4 mx-4" />
       <div className="text-left ml-7">
         <h1 className="text-[#1C1B1B] font-bold text-xl my-2">Course Name:</h1>
-       
-         {
-            infoCart.map((item)=>{
-                return  <li key={item.id} className="list-decimal mt-1 list-inside">{item.courseTitle}</li> 
-            })
-         }
-    
+        {infoCart.map((item) => {
+          return (
+            <li key={item.id} className="list-decimal mt-1 list-inside">
+              {item.courseTitle}
+            </li>
+          );
+        })}
+
+        <div className="mt-4 text-lg font-semibold">
+          Total Credit Hour : {credit} Hours
+        </div>
+        <div className="text-lg font-semibold">
+          Total Price : ${price} USD
+        </div>
       </div>
     </div>
   );
 };
 
 Cart.propTypes = {
-    infoCart: PropTypes.array,
+  infoCart: PropTypes.array,
+  credit: PropTypes.number,
+  remainingCredit: PropTypes.number,
+  price: PropTypes.number,
 };
 
 export default Cart;

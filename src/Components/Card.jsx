@@ -19,7 +19,7 @@ const Card = ({ info, handleSelect }) => {
 
             <p className="flex items-center">
               <img src="/src/assets/credit.svg" alt="" className="mr-2" />{" "}
-              Credit: {courseCredit}Hour
+              Credit: {courseCredit}hours
             </p>
           </div>
           <div className="card-actions justify-end">

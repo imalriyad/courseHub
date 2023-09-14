@@ -5,17 +5,27 @@ import Cart from "./Cart";
 
 const Home = () => {
   const [data, setData] = useState([]);
+  const [infoCart, setName] = useState([]);
+  const [credit, setCredit] = useState(0);
+  const [remainingCredit, setRemaingcredit] = useState(20);
+  const [price,setPrice] = useState(0)
+
   useEffect(() => {
     fetch("data.json")
       .then((res) => res.json())
       .then((data) => setData(data));
   }, []);
 
-// add course name trough select button
-  const [infoCart,setName] = useState([])
+  // add course name trough select button
   const handleSelect = (info) => {
-      const newName = [...infoCart,info]
-      setName(newName)
+    const newName = [...infoCart, info];
+    setName(newName);
+    const newCredit = credit + info.courseCredit;
+    setCredit(newCredit);
+    const newremainingCredit = remainingCredit - info.courseCredit;
+    setRemaingcredit(newremainingCredit);
+    const newPrice = price + info.coursePrice
+    setPrice(newPrice)
   };
   return (
     <div>
@@ -28,7 +38,12 @@ const Home = () => {
           })}
         </div>
         <div className="text-center lg:w-1/4 my-4">
-          <Cart infoCart={infoCart}/>
+          <Cart
+            infoCart={infoCart}
+            credit={credit}
+            remainingCredit={remainingCredit}
+            price={price}
+          />
         </div>
       </div>
     </div>
