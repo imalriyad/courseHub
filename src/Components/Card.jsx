@@ -1,5 +1,6 @@
 import PropTypes from "prop-types"; // ES6
 import { useState } from "react";
+import { MdOutlineDownloadDone } from 'react-icons/md';
 const Card = ({ info, handleSelect }) => {
   const { courseTitle, courseDetails, courseCredit, coursePrice, thumbnail } =
     info;
@@ -31,9 +32,10 @@ const Card = ({ info, handleSelect }) => {
                 handleSelect(info);
                 setSelect(true)
               }}
-              className="bg-[#2F80ED] hover:bg-[#2F80ED] py-2 text-base rounded-md text-white w-full "
+              className="bg-[#2F80ED] hover:bg-[#2F80ED] py-2 text-base rounded-md text-white w-full flex justify-center items-center"
             >
-             {select?'Selected': 'Select'}
+             {select?'Selected':'Select'}
+             {select?<MdOutlineDownloadDone/>:''}
             </button>
           </div>
         </div>
