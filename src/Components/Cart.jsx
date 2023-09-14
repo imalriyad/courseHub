@@ -11,7 +11,7 @@ const Cart = ({ infoCart, credit, price, remainingCredit }) => {
         <h1 className="text-[#1C1B1B] font-bold text-xl my-2">Course Name:</h1>
         {infoCart.map((item) => {
           return (
-            <li key={item.id} className="list-decimal mt-1 list-inside">
+            <li key={item.id} className="list-decimal bg-gray-100 rounded-md p-2 mt-2 list-inside mr-5">
               {item.courseTitle}
             </li>
           );

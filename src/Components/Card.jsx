@@ -4,7 +4,7 @@ import { MdOutlineDownloadDone } from 'react-icons/md';
 const Card = ({ info, handleSelect }) => {
   const { courseTitle, courseDetails, courseCredit, coursePrice, thumbnail } =
     info;
-    const [select, setSelect] = useState(false)
+    const [isSelect, setSelect] = useState(false)
 
   return (
     <div>
@@ -34,8 +34,8 @@ const Card = ({ info, handleSelect }) => {
               }}
               className="bg-[#2F80ED] hover:bg-[#2F80ED] py-2 text-base rounded-md text-white w-full flex justify-center items-center"
             >
-             {select?'Selected':'Select'}
-             {select?<MdOutlineDownloadDone/>:''}
+             {isSelect?'Selected':'Select'}
+             {isSelect?<MdOutlineDownloadDone/>:''}
             </button>
           </div>
         </div>

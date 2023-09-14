@@ -27,10 +27,13 @@ const Home = () => {
       return toast.error("You have already purchased this Course!")
     }
     else{
-      setName(newInfoCart);
       const newCredit = credit + info.courseCredit;
-      setCredit(newCredit);
       const newremainingCredit = remainingCredit - info.courseCredit;
+      if (newCredit>20) {
+        return toast.error("Insufficient credit limit!")
+      }
+      setName(newInfoCart);
+      setCredit(newCredit);
       setRemaingcredit(newremainingCredit);
       const newPrice = price + info.coursePrice;
       setPrice(newPrice);
@@ -62,7 +65,7 @@ const Home = () => {
       <Toaster toastOptions={{
     // Define default options
     className: '',
-    duration: 1300,
+    duration: 1100,
    
 
   }}/>
