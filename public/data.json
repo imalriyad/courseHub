@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "courseTitle": "Python Programming (OOP)",
+    "courseDetails": "Explore the principles and practices of object-oriented programming in Python, and build robust, reusable code.",
+    "courseCredit": 3,
+    "coursePrice": 49,
+    "thumbnail": "https://i.ibb.co/yBGhDc2/python.png"
+  },
+  {
+    "id": 2,
+    "courseTitle": "MySQL Database Management",
+    "courseDetails": "Master the fundamentals of MySQL database management, from installation to advanced queries and optimization techniques.",
+    "courseCredit": 4,
+    "coursePrice": 59,
+    "thumbnail": "https://i.ibb.co/mzKXrz0/mySql.png"
+  },
+  {
+    "id": 3,
+    "courseTitle": "C Programming Basics",
+    "courseDetails": "Get started with the basics of C programming language, covering syntax, data types, and simple program development.",
+    "courseCredit": 3,
+    "coursePrice": 45,
+    "thumbnail": "https://i.ibb.co/Zf16Tdk/Cprogramming.png"
+  },
+  {
+    "id": 4,
+    "courseTitle": "Algorithmic Problem Solving",
+    "courseDetails": "Dive deep into the world of algorithms, including sorting, searching, and optimization algorithms, and their practical applications.",
+    "courseCredit": 3,
+    "coursePrice": 37,
+    "thumbnail": "https://i.ibb.co/C5FLhCK/algorithm.png"
+  },
+  {
+    "id": 5,
+    "courseTitle": "Advanced C++ Programming",
+    "courseDetails": "Advance your knowledge of C++ programming, covering advanced topics like templates, exceptions, and object-oriented design.",
+    "courseCredit": 4,
+    "coursePrice": 59,
+    "thumbnail": "https://i.ibb.co/NKmyjZn/cPlus.png"
+  },
+  {
+    "id": 6,
+    "courseTitle": "Software Engineering Vision",
+    "courseDetails": "Gain a comprehensive understanding of software engineering principles and best practices in software development.",
+    "courseCredit": 5,
+    "coursePrice": 69,
+    "thumbnail": "https://i.ibb.co/3RZDLr5/softwareeng.png"
+  },
+  {
+    "id": 7,
+    "courseTitle": "Data Structures and Algorithms",
+    "courseDetails": "Explore various data structures, including arrays, linked lists, trees, and graphs, and learn how to implement them in code.",
+    "courseCredit": 4,
+    "coursePrice": 55,
+    "thumbnail": "https://i.ibb.co/bgdQ8nN/datastrcutre.png"
+  },
+  {
+    "id": 8,
+    "courseTitle": "AWS Cloud Computing (AWS)",
+    "courseDetails": "Learn Amazon Web Services (AWS) and dive into the world of cloud computing, covering services like EC2, S3, and more.",
+    "courseCredit": 5,
+    "coursePrice": 69,
+    "thumbnail": "https://i.ibb.co/N1r4SRg/aws.png"
+  },
+  {
+    "id": 9,
+    "courseTitle": "Problem Solving Techniques",
+    "courseDetails": "Enhance your problem-solving skills and tackle complex challenges with confidence through practical exercises and techniques.",
+    "courseCredit": 2,
+    "coursePrice": 39,
+    "thumbnail": "https://i.ibb.co/37LkfdH/problemsolving.png"
+  }
+]
