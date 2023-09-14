@@ -1,7 +1,10 @@
 import PropTypes from "prop-types"; // ES6
+import { useState } from "react";
 const Card = ({ info, handleSelect }) => {
   const { courseTitle, courseDetails, courseCredit, coursePrice, thumbnail } =
     info;
+    const [select, setSelect] = useState(false)
+
   return (
     <div>
       <div className="card h-[424px] card-compact bg-base-100 shadow-xl rounded-md">
@@ -24,10 +27,13 @@ const Card = ({ info, handleSelect }) => {
           </div>
           <div className="card-actions justify-end">
             <button
-              onClick={()=> handleSelect(info)}
+              onClick={() => {
+                handleSelect(info);
+                setSelect(true)
+              }}
               className="bg-[#2F80ED] hover:bg-[#2F80ED] py-2 text-base rounded-md text-white w-full "
             >
-              Select
+             {select?'Selected': 'Select'}
             </button>
           </div>
         </div>

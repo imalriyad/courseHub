@@ -1,5 +1,6 @@
 import PropTypes from "prop-types"; // ES6
 const Cart = ({ infoCart, credit, price, remainingCredit }) => {
+ 
   return (
     <div className=" bg-white rounded-lg py-6 mx-4">
       <h1 className="text-[#2F80ED] font-bold text-xl">
@@ -15,13 +16,11 @@ const Cart = ({ infoCart, credit, price, remainingCredit }) => {
             </li>
           );
         })}
-
-        <div className="mt-4 text-lg font-semibold">
+         <hr className="border-[1px] border-gray-100 mt-5 mx-auto"/>
+        <div className="mt-2 text-lg font-semibold">
           Total Credit Hour : {credit} Hours
         </div>
-        <div className="text-lg font-semibold">
-          Total Price : ${price} USD
-        </div>
+        <div className="text-lg font-semibold">Total Price : ${price} USD</div>
       </div>
     </div>
   );
