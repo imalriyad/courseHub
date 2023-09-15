@@ -1,6 +1,4 @@
 import PropTypes from "prop-types"; // ES6
-import { useState } from "react";
-import { MdOutlineDownloadDone } from "react-icons/md";
 const Card = ({ info, handleSelect }) => {
   const { courseTitle, courseDetails, courseCredit, coursePrice, thumbnail } =
     info;
@@ -16,12 +14,12 @@ const Card = ({ info, handleSelect }) => {
           <p className="text-[#1C1B1B99]">{courseDetails}</p>
           <div className="flex gap-6 items-center text-[#0a0a0aca] font-medium my-3 text-base">
             <p className="flex items-center">
-              <img src="/src/assets/dollar-sign 1.svg" alt="" />
+              <img src="https://i.ibb.co/ZJ42WfF/dollar-sign.png" alt="" />
               Price: {coursePrice}
             </p>
 
             <p className="flex items-center">
-              <img src="/src/assets/credit.svg" alt="" className="mr-2" />{" "}
+              <img src="https://i.ibb.co/jfvMQpY/credit.png" alt="" className="mr-2" />{" "}
               Credit: {courseCredit}hours
             </p>
           </div>
