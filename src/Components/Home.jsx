@@ -63,10 +63,7 @@ const Home = () => {
         </div>
       </div>
       <Toaster toastOptions={{
-    // Define default options
-    className: '',
-    duration: 1100,
-   
+    duration: 1100,  
 
   }}/>
     </div>

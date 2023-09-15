@@ -35,8 +35,8 @@
     "id": 5,
     "courseTitle": "Advanced C++ Programming",
     "courseDetails": "Advance your knowledge of C++ programming, covering advanced topics like templates, exceptions, and object-oriented design.",
-    "courseCredit": 4,
-    "coursePrice": 59,
+    "courseCredit": 6,
+    "coursePrice": 69,
     "thumbnail": "https://i.ibb.co/NKmyjZn/cPlus.png"
   },
   {
@@ -44,7 +44,7 @@
     "courseTitle": "Software Engineering Vision",
     "courseDetails": "Gain a comprehensive understanding of software engineering principles and best practices in software development.",
     "courseCredit": 5,
-    "coursePrice": 69,
+    "coursePrice": 79,
     "thumbnail": "https://i.ibb.co/3RZDLr5/softwareeng.png"
   },
   {
@@ -60,7 +60,7 @@
     "courseTitle": "AWS Cloud Computing (AWS)",
     "courseDetails": "Learn Amazon Web Services (AWS) and dive into the world of cloud computing, covering services like EC2, S3, and more.",
     "courseCredit": 5,
-    "coursePrice": 69,
+    "coursePrice": 65,
     "thumbnail": "https://i.ibb.co/N1r4SRg/aws.png"
   },
   {
