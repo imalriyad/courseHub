@@ -26,11 +26,11 @@ for store setPrice and set them at cart i have used setPrice state
 * const [infoCart, setName] = useState([]);
 for store setPrice and set them at cart i have used setPrice state
 
-*const [credit, setCredit] = useState(0);
+* const [credit, setCredit] = useState(0);
 for store credit and set them at cart i have used setCredit state
 
-*const [remainingCredit, setRemaingcredit] = useState(20);
+* const [remainingCredit, setRemaingcredit] = useState(20);
 for store remaining credit and set them at cart i have used setRemaingcredit state
 
-*const [price, setPrice] = useState(0);
+* const [price, setPrice] = useState(0);
 for store setPrice and set them at cart i have used setPrice state
