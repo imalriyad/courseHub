@@ -9,7 +9,7 @@ Here are the few features you will love to try
 
 3.Added Total Price : By clicking select button you can see total price option in cart is updating , this is where course prices are added one by one . Everytime you click in diffrent card that select button takes course price from each card and adds them with eachother and shows them at total price in cart.
 
-4.Responsive: This react spa project is well responsive so you can view it on most screen sizes comfortably.
+<b>4.Responsive:<b> This react spa project is well responsive so you can view it on most screen sizes comfortably.
 
 
 <!-- Discuss how you managed the state in your assignment project. -->
