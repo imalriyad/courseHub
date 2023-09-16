@@ -21,16 +21,19 @@ By clicking select button you can see Total Credit hours and Remaining total cre
 In this project, I have used 5 state
 
 * const [data, setData] = useState([]);
-for store setPrice and set them at cart i have used setPrice state
+ By fetching each courses details from datalist and storing in data and show them in a card i have used setData state.
+
 
 * const [infoCart, setName] = useState([]);
-for store setPrice and set them at cart i have used setPrice state
+For storing Course tittle in infocart and set them at cart  i have used setName state.
+later i have used infoCart as props and send to child component where i needed 
 
 * const [credit, setCredit] = useState(0);
-for store credit and set them at cart i have used setCredit state
+For storing each Course credit by clicking select button in credit and set them at cart i have used setCredit state.
+Later i have used 'setCredit' to dynamically manage and display the total course credits in the cart
 
 * const [remainingCredit, setRemaingcredit] = useState(20);
-for store remaining credit and set them at cart i have used setRemaingcredit state
+for store remaining credit and set them at cart i have used setRemaingcredit state .it has innitial value 20 becasue there is limit of spending credit is 20
 
 * const [price, setPrice] = useState(0);
-for store setPrice and set them at cart i have used setPrice state
+For storing Course Price and set them at cart i have used setPrice state
